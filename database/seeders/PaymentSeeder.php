@@ -15,11 +15,11 @@ class PaymentSeeder extends Seeder
     public function run()
     {
         Payment::create([
-            'payment_type' => 'online',
+            'payment_type' => 'creditcard',
         ]);
 
         Payment::create([
-            'payment_type' => 'cash on delivery',
+            'payment_type' => 'wiretransfer',
         ]);
     }
 }
